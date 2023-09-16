@@ -1,6 +1,6 @@
 # 🎮 BeatEmUp-WebGame
 
-🎉 [立即玩游戏！](https://github.com/SLDragon-cx330/BeatEmUp-WebGame/狂扁XXX.html)  <!-- 添加的连接入口 -->
+🎉 [立即玩游戏！](https://sldragon-cx330.github.io/BeatEmUp-WebGame/狂扁XXX.html)  <!-- 添加的连接入口 -->
 
 🥊 一个简单的网页打击游戏，用于解压和娱乐。基于HTML5, CSS3和JS。
 
