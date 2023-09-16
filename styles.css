@@ -1,0 +1,106 @@
+/* styles.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #eaeaea;
+}
+
+.game-container {
+    position: relative;
+    width: 80vw;
+    max-width: 400px;
+}
+
+#xxx {
+    width: 100%;
+    transition: transform 0.1s;
+}
+
+.damage {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2em;
+    color: red;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.tools {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* styles.css */
+
+.attack-tool {
+    width: 20%;
+    cursor: pointer;
+    transition: transform 0.1s;
+    background-color: transparent; /* 确保背景是透明的 */
+    border: none; /* 移除任何默认边框 */
+}
+
+
+.attack-tool:hover {
+    transform: scale(1.1);
+}
+
+.message {
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: green;
+    text-align: center;
+}
+
+
+.health-bar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 30px; /* 增加高度以适应文字 */
+    background-color: grey;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    padding-left: 10px;
+}
+
+.health-label {
+    margin-right: 10px;
+    font-weight: bold;
+    white-space: nowrap; /* 确保文字不会折行 */
+}
+
+.tool {
+    position: relative;
+    width: 30%; /* 分配每个工具30%的宽度 */
+    margin: 0 1.5%; /* 左右各留1.5%的间距，三个工具总共占据100%的宽度 */
+    display: flex;
+    flex-direction: column; /* 使图片和标签垂直堆叠 */
+    align-items: center; /* 居中对齐 */
+}
+
+.attack-tool {
+    width: 100%; /* 使图片尽可能大，但不超过其容器的宽度 */
+    height: auto; /* 保持原始的宽高比 */
+}
+
+.tool-label {
+    text-align: center;
+    font-size: 0.9em;
+    margin-top: 5px;
+    width: 100%; /* 使标签占据整个容器的宽度 */
+}
+
+.current-health {
+    height: 100%;
+    background-color: red;
+    width: 100%; /* 默认是满血 */
+}
